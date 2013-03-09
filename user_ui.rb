@@ -3,14 +3,10 @@ require './play.rb'
 require './field.rb'
 
 field=Field.new(3)
-field.setX 2
-field.setY 1
-#field.addFigure 'X'
 field.drawField
 player=Player.new field
 ai = AI.new field
 turn = true
-
 until field.victory? || field.notFreeSpace?
    if turn
      puts "You turn"

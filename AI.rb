@@ -10,7 +10,7 @@ class AI               #штучны інтылект
     return true if tryGeneralRules
     return true if tryCenter
     return true if tryCorner
-    #return true if tryAnywhere
+    return true if tryAnywhere
     false
   end
 
@@ -144,7 +144,6 @@ class AI               #штучны інтылект
       while @arr[j][@rank-j-1]!='empty'
         j+=1
       end
-      puts "ololololo"
       @field.setX @rank-1-j
       @field.setY j
       @field.addFigure '0'
