@@ -1,6 +1,6 @@
 class Field   #arr, rank, xval, yval
   attr_reader :arr
-  def initialize(numbOfElemInLine)
+  def initialize numbOfElemInLine  #працуе для Н элементаў
     @rank = numbOfElemInLine
     @arr = Array.new(@rank, [])
     for i in (0..@rank-1)          #пытаньнечка. як інакш?

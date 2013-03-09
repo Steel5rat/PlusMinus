@@ -1,5 +1,5 @@
-class AI     #працуе з полем толькі 3х3. магчыма, з любой колькасьцю няцотных
-  def initialize field
+class AI               #штучны інтылект
+  def initialize field       #працуе з полем толькі 3х3. магчыма, з любой колькасьцю няцотных
     @field=Array.new(3)
     @field= field
     @arr=@field.arr
