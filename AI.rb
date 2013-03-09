@@ -141,11 +141,12 @@ class AI               #штучны інтылект
     end
     if count==@rank-1 && flag
       j=0
-      while @arr[j][j-@rank-1]!='empty'
+      while @arr[j][@rank-j-1]!='empty'
         j+=1
       end
-      @field.setX j
-      @field.setY j-@rank-1
+      puts "ololololo"
+      @field.setX @rank-1-j
+      @field.setY j
       @field.addFigure '0'
       return true
     end
